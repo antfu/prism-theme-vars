@@ -1,7 +1,7 @@
 {
   "name": "prism-theme-vars",
   "description": "A customizable Prism.js theme using CSS variables",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "gen": "esno scripts/gen.ts",
     "release": "npx bumpp --commit --tag --push && npm publish"
