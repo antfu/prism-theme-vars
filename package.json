@@ -1,0 +1,40 @@
+{
+  "name": "prism-theme-vars",
+  "description": "A customizable Prism.js theme using CSS variables",
+  "version": "0.0.1",
+  "scripts": {
+    "gen": "esno scripts/gen.ts"
+  },
+  "main": "index.js",
+  "module": "index.mjs",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "exports": {
+    "./": "./",
+    "./base.css": "./base.css"
+  },
+  "files": [
+    "base.css",
+    "index.js",
+    "index.mjs"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antfu/prism-theme-vars.git"
+  },
+  "bugs": {
+    "url": "https://github.com/antfu/prism-theme-vars/issues"
+  },
+  "homepage": "https://github.com/antfu/prism-theme-vars#readme",
+  "funding": "https://github.com/sponsors/antfu",
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.4.3",
+    "@types/markdown-it": "^12.0.1",
+    "@types/node": "^14.14.22",
+    "eslint": "^7.18.0",
+    "esno": "^0.4.0",
+    "markdown-it": "^12.0.4",
+    "markdown-it-prism": "^2.1.4",
+    "typescript": "^4.1.3"
+  }
+}

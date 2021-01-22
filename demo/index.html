@@ -1,0 +1,41 @@
+<head>
+<link rel="stylesheet" href="../base.css">
+<style>
+  :root {
+    --prism-foreground: #393a34;
+    --prism-background: #f8f8f8;
+    --prism-selection-background: #c1def1;
+
+    --prism-comment: #758575;
+    --prism-namespace: #444444;
+    --prism-string: #bc8671;
+    --prism-punctuation: #80817d;
+    --prism-literal: #36acaa;
+    --prism-keyword: #248459;
+    --prism-function: #849145;
+    --prism-deleted: #9a050f;
+    --prism-class: #2b91af;
+    --prism-builtin: #800000;
+    --prism-property: #ce9178;
+    --prism-regex: #ad502b;
+  }
+
+  html {
+    padding: 1rem;
+  }
+</style>
+</head>
+<body>
+  <!--start--><pre class="language-ts"><code class="language-ts"><span class="token keyword">import</span> MarkdownIt <span class="token keyword">from</span> <span class="token string">'markdown-it'</span>
+<span class="token keyword">import</span> Prism <span class="token keyword">from</span> <span class="token string">'markdown-it-prism'</span>
+<span class="token keyword">import</span> fs <span class="token keyword">from</span> <span class="token string">'fs'</span>
+
+<span class="token keyword">let</span> html <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'demo/index.html'</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> md <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MarkdownIt</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+md<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Prism<span class="token punctuation">)</span>
+<span class="token keyword">const</span> rendered <span class="token operator">=</span> md<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'demo/index.md'</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+html <span class="token operator">=</span> html<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">&lt;!--start-->[\s\S\n]*&lt;!--end--></span><span class="token regex-delimiter">/</span><span class="token regex-flags">m</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;!--start--></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>rendered<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;!--end--></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+fs<span class="token punctuation">.</span><span class="token function">writeFileSync</span><span class="token punctuation">(</span><span class="token string">'demo/index.html'</span><span class="token punctuation">,</span> html<span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+</code></pre>
+<!--end-->
+</body>
