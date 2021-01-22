@@ -3,7 +3,8 @@
   "description": "A customizable Prism.js theme using CSS variables",
   "version": "0.0.1",
   "scripts": {
-    "gen": "esno scripts/gen.ts"
+    "gen": "esno scripts/gen.ts",
+    "release": "npx bumpp --commit --tag --push && npm publish"
   },
   "main": "index.js",
   "module": "index.mjs",
