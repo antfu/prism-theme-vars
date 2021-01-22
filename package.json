@@ -9,6 +9,10 @@
   "module": "index.mjs",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    },
     "./": "./",
     "./base.css": "./base.css"
   },
