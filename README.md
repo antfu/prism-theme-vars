@@ -6,6 +6,10 @@ A customizable Prism.js theme using CSS variables
 
 ## Usage
 
+```bash
+npm i prism-theme-vars
+```
+
 ```ts
 import 'prism-theme-vars/base.css'
 ```
