@@ -2,12 +2,12 @@
 
 [class*='language-']:before {
   position: absolute;
-  top: .6em;
-  right: 1em;
+  top: .4em;
+  right: 0.8em;
   z-index: 2;
   opacity: var(--prism-marker-opacity);
-  font-size: .8rem;
-  opacity: var(--prism-marker-color);
+  font-size: var(--prism-marker-font-size);
+  color: var(--prism-marker-color);
 }
 
 [class~='language-html']:before,

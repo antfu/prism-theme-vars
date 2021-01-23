@@ -41,7 +41,8 @@
   --prism-line-highlight-background: #eeeeee;
   --prism-selection-background: #aaaaaa;
   --prism-marker-color: var(--prism-foreground);
-  --prism-marker-opacity: 0.5;
+  --prism-marker-opacity: 0.4;
+  --prism-marker-font-size: 0.8em;
 
   /* Font */
   --prism-font-size: 1em;
