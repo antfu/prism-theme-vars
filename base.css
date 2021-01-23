@@ -61,6 +61,7 @@
   --prism-inline-radius: 0.3em;
 }
 
+div[class*='language-'],
 pre[class*='language-'],
 code[class*='language-'] {
   font-size: var(--prism-font-size);
@@ -78,31 +79,29 @@ code[class*='language-'] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  color: var(--prism-foreground) !important;
 }
 
+/* Code blocks */
+div[class*='language-'],
 pre[class*='language-'] {
   font-size: var(--prism-block-font-size);
   padding: var(--prism-block-padding-y) var(--prism-block-padding-x);
   margin: var(--prism-block-margin-y) var(--prism-block-margin-x);
   border-radius: var(--prism-block-radius);
   overflow: auto;
+  background: var(--prism-background);
 }
 
+/* Inline code */
 :not(pre) > code[class*='language-'] {
   font-size: var(--prism-inline-font-size);
   padding: var(--prism-inline-padding-y) var(--prism-inline-padding-x);
   border-radius: var(--prism-inline-radius);
+  background: var(--prism-inline-background);
 }
 
-pre {
-  text-align: left;
-}
-
-code[class*='language-'],
-pre[class*='language-'] {
-  color: var(--prism-foreground) !important;
-}
-
+/* Selection */
 pre[class*='language-']::selection,
 pre[class*='language-'] ::selection,
 code[class*='language-']::selection,
@@ -114,16 +113,7 @@ code[class*='language-'] ::-moz-selection {
   background: var(--prism-selection-background);
 }
 
-/* Code blocks */
-pre[class*='language-'] {
-  background-color: var(--prism-background);
-}
-
-/* Inline code */
-:not(pre) > code[class*='language-'] {
-  background: var(--prism-inline-background);
-}
-
+/* Tokens */
 .token.comment,
 .token.prolog,
 .token.doctype,
