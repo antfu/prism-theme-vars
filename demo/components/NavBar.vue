@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { download, Themes, theme } from '../store'
+import { downloadCSS, downloadJSON, Themes, theme } from '../store'
 </script>
 
 <template>
@@ -13,10 +13,14 @@ import { download, Themes, theme } from '../store'
         {{ theme }}
       </option>
     </select>
-    <div class="p-2 icon-btn rounded inline-block opacity-75" @click="download">
+    <button title="Download JSON" class="p-2 icon-btn rounded inline-block opacity-75" @click="downloadJSON">
+      <carbon-document-download />
+    </button>
+    <button title="Download CSS" class="p-2 icon-btn rounded inline-block opacity-75" @click="downloadCSS">
       <carbon-download />
-    </div>
+    </button>
     <a
+      title="GitHub"
       class="p-2 icon-btn rounded inline-block opacity-75"
       href="https://github.com/antfu/prism-theme-vars"
       target="_blank"

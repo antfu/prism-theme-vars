@@ -4,7 +4,7 @@ import DefaultColors from './default.json'
 import { Themes } from './themes'
 
 export const colors = reactive({ ...DefaultColors }) as any
-export const theme = ref<keyof typeof Themes>('VitesseLight')
+export const theme = ref<keyof typeof Themes>('Vitesse Light')
 
 export function resetTheme() {
   Object.assign(colors, DefaultColors)
@@ -16,17 +16,29 @@ export function applyTheme(name: keyof typeof Themes) {
 
 export const colorRefs = Object.entries(toRefs(colors)) as [string, Ref<string>][]
 
+export function getColorEntries(diff = true) {
+  return Object.entries(colors)
+    .filter(([key, value]) => !diff || (DefaultColors as any)[key] !== value)
+}
+
+export function getJSON(diff = true) {
+  return JSON.stringify(Object.fromEntries(getColorEntries(diff)), null, 2)
+}
+
 export function getCSS(diff = true) {
   return `:root {\n${
-    Object.entries(colors)
-      .filter(([key, value]) => !diff || (DefaultColors as any)[key] !== value)
+    getColorEntries(diff)
       .map(([key, value]) => `  ${key}: ${value};`)
       .join('\n')
   }\n}`
 }
 
-export function download() {
+export function downloadCSS() {
   saveAs(new Blob([getCSS()], { type: 'text/css' }), 'theme-vars.css')
+}
+
+export function downloadJSON() {
+  saveAs(new Blob([getJSON()], { type: 'application/json' }), 'theme-vars.css')
 }
 
 watch(theme, applyTheme, { immediate: true })
