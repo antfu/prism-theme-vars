@@ -58,7 +58,7 @@ function onclick() {
     <input
       v-model="value"
       class="m-auto font-mono bg-transparent text-right outline-none"
-      style="width: 300px"
+      style="width: 200px"
       :disabled="readonly"
     >
     <input

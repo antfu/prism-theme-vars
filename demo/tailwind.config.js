@@ -5,10 +5,10 @@ module.exports = {
     enabled: process.env.NODE_ENV === 'production',
     content: [
       './index.html',
-      './src/**/*.vue',
-      './src/**/*.md',
-      './src/**/*.js',
-      './src/**/*.ts',
+      './**/*.vue',
+      './**/*.md',
+      './**/*.js',
+      './**/*.ts',
     ],
     options: {
       safelist: ['prose', 'prose-sm', 'm-auto'],
