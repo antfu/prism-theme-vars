@@ -1,0 +1,102 @@
+/* Language marker */
+
+[class*='language-']:before {
+  position: absolute;
+  top: .6em;
+  right: 1em;
+  z-index: 2;
+  opacity: var(--prism-marker-opacity);
+  font-size: .8rem;
+  opacity: var(--prism-marker-color);
+}
+
+[class~='language-html']:before,
+[class~='language-markup']:before {
+  content: 'html';
+}
+
+[class~='language-md']:before,
+[class~='language-markdown']:before {
+  content: 'md';
+}
+
+[class~='language-css']:before {
+  content: 'css';
+}
+
+[class~='language-sass']:before {
+  content: 'sass';
+}
+
+[class~='language-scss']:before {
+  content: 'scss';
+}
+
+[class~='language-less']:before {
+  content: 'less';
+}
+
+[class~='language-stylus']:before {
+  content: 'styl';
+}
+
+[class~='language-js']:before,
+[class~='language-typescript']:before {
+  content: 'js';
+}
+
+[class~='language-ts']:before,
+[class~='language-typescript']:before {
+  content: 'ts';
+}
+
+[class~='language-json']:before {
+  content: 'json';
+}
+
+[class~='language-rb']:before,
+[class~='language-ruby']:before {
+  content: 'rb';
+}
+
+[class~='language-py']:before,
+[class~='language-python']:before {
+  content: 'py';
+}
+
+[class~='language-sh']:before,
+[class~='language-bash']:before {
+  content: 'sh';
+}
+
+[class~='language-php']:before {
+  content: 'php';
+}
+
+[class~='language-go']:before {
+  content: 'go';
+}
+
+[class~='language-rust']:before {
+  content: 'rust';
+}
+
+[class~='language-java']:before {
+  content: 'java';
+}
+
+[class~='language-c']:before {
+  content: 'c';
+}
+
+[class~='language-yaml']:before {
+  content: 'yaml';
+}
+
+[class~='language-vue']:before {
+  content: 'vue';
+}
+
+[class~='language-dockerfile']:before {
+  content: 'dockerfile';
+}

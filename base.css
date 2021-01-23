@@ -40,6 +40,8 @@
   --prism-line-number-gutter: #333333;
   --prism-line-highlight-background: #eeeeee;
   --prism-selection-background: #aaaaaa;
+  --prism-marker-color: var(--prism-foreground);
+  --prism-marker-opacity: 0.5;
 
   /* Font */
   --prism-font-size: 1em;

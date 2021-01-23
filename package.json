@@ -16,10 +16,12 @@
       "require": "./index.js"
     },
     "./": "./",
-    "./base.css": "./base.css"
+    "./base.css": "./base.css",
+    "./marker.css": "./marker.css"
   },
   "files": [
     "base.css",
+    "marker.css",
     "index.js",
     "index.mjs"
   ],
