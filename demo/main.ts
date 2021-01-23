@@ -1,6 +1,6 @@
+import './main.postcss'
 import '../base.css'
-import './vars.css'
 import { createApp } from 'vue'
-import App from './index.md'
+import App from './App.vue'
 
 createApp(App).mount('#app')

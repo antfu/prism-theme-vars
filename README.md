@@ -1,8 +1,10 @@
-# prism-theme-vars
+# Prism <samp>--theme-vars</samp>
 
 A customizable Prism.js theme using CSS variables
 
 [![NPM version](https://img.shields.io/npm/v/prism-theme-vars?color=a1b858)](https://www.npmjs.com/package/prism-theme-vars)
+
+[🌈 **Live Playground**](https://prism-theme-vars.netlify.app/)
 
 ## Usage
 
