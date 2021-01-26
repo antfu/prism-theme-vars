@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { watch } from 'vue'
 import Demo from './demo.md'
-import { colors } from './store/colors'
+import { colors } from './store'
 
 watch(
   () => colors['--prism-scheme'],
