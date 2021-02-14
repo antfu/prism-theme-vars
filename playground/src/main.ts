@@ -1,5 +1,6 @@
-import './main.postcss'
-import '../base.css'
+import 'windi.css'
+import './main.css'
+import '../../base.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 

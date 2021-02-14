@@ -4,7 +4,7 @@ import { downloadCSS, downloadJSON, Themes, theme } from '../store'
 
 <template>
   <div class="border-b border-light p-3 flex">
-    <div class="ml-2 m-auto text-lg font-mono">
+    <div class="my-auto ml-2 text-lg font-mono">
       <span class="opacity-50">Prism</span> <span>--theme-vars</span>
     </div>
     <div class="flex-auto" />
