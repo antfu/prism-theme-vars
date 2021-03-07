@@ -1,8 +1,7 @@
 import fs from 'fs'
-import { parse } from 'path'
-import {
-  capitalCase,
-} from 'change-case'
+import { parse, resolve } from 'path'
+// eslint-disable-next-line import/named
+import { capitalCase } from 'change-case'
 import fg from 'fast-glob'
 
 function cssToJson(css: string): Record<string, string> {
@@ -14,11 +13,11 @@ function cssToJson(css: string): Record<string, string> {
 
 const themes: Record<string, Record<string, string>> = {}
 
-themes.Default = cssToJson(fs.readFileSync('base.css', 'utf-8'))
+themes.Default = cssToJson(fs.readFileSync(resolve(__dirname, '../base.css'), 'utf-8'))
 
-for (const path of fg.sync('themes/*.css')) {
+for (const path of fg.sync('themes/*.css', { cwd: resolve(__dirname, '..'), absolute: true })) {
   const name = parse(path).name
   themes[capitalCase(name)] = cssToJson(fs.readFileSync(path, 'utf-8'))
 }
 
-fs.writeFileSync('playground/store/themes.json', `${JSON.stringify(themes, null, 2)}\n`, 'utf-8')
+fs.writeFileSync(resolve(__dirname, 'src/store/themes.json'), `${JSON.stringify(themes, null, 2)}\n`, 'utf-8')
