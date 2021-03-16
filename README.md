@@ -6,6 +6,8 @@ A customizable Prism.js theme using CSS variables
 
 [🌈 **Live Playground**](https://prism-theme-vars.netlify.app/)
 
+- [codemirror-theme-vars](https://github.com/antfu/codemirror-theme-vars)
+
 ## Usage
 
 ```bash
@@ -65,6 +67,19 @@ We have a few themes variables built-in that you can directly use.
 ```
 
 See all themes avaliable under [themes/*](./themes). Contributions are also greatly welcome! 
+
+### Work with `codemirror-theme-vars`
+
+```css
+@import "prism-theme-vars/base.css";
+@import "prism-theme-vars/to-codemirror.css";
+
+/* --prism prefix will alias to --cm automatically */
+:root {
+  --prism-foreground: #393a34;
+  --prism-background: #fbfbfb;
+}
+```
 
 ### Dark mode
 

@@ -24,6 +24,7 @@
   "files": [
     "base.css",
     "marker.css",
+    "to-codemirror.css",
     "index.js",
     "index.mjs",
     "themes"
