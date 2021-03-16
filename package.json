@@ -1,7 +1,7 @@
 {
   "name": "prism-theme-vars",
   "description": "A customizable Prism.js theme using CSS variables",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "scripts": {
     "dev": "npm -C playground run dev",
     "build": "npm -C playground run build",
