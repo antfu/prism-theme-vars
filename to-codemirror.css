@@ -1,0 +1,65 @@
+:root {
+  --cm-scheme: var(--prism-scheme);
+
+  /* Colors */
+  --cm-foreground: var(--prism-foreground);
+  --cm-background: var(--prism-background);
+
+  /* Tokens */
+  --cm-comment: var(--prism-comment);
+  --cm-string: var(--prism-string);
+  --cm-literal: var(--prism-literal);
+  --cm-keyword: var(--prism-keyword);
+  --cm-function: var(--prism-function);
+  --cm-deleted: var(--prism-deleted);
+  --cm-class: var(--prism-class);
+  --cm-builtin: var(--prism-builtin);
+  --cm-property: var(--prism-property);
+  --cm-namespace: var(--prism-namespace);
+  --cm-punctuation: var(--prism-punctuation);
+  --cm-decorator: var(--prism-decorator);
+  --cm-operator: var(--prism-operator);
+  --cm-number: var(--prism-number);
+  --cm-boolean: var(--prism-boolean);
+  --cm-variable: var(--prism-variable);
+  --cm-constant: var(--prism-constant);
+  --cm-symbol: var(--prism-symbol);
+  --cm-interpolation: var(--prism-interpolation);
+  --cm-selector: var(--prism-selector);
+  --cm-keyword-control: var(--prism-keyword-control);
+  --cm-regex: var(--prism-regex);
+  --cm-json-property: var(--prism-json-property);
+  --cm-inline-background: var(--prism-inline-background);
+
+  /* Token Styles */
+  --cm-comment-style: var(--prism-comment-style);
+  --cm-url-decoration: var(--prism-url-decoration);
+
+  /* Extension */
+  --cm-line-number: var(--prism-line-number);
+  --cm-line-number-gutter: var(--prism-line-number-gutter);
+  --cm-line-highlight-background: var(--prism-line-highlight-background);
+  --cm-selection-background: var(--prism-selection-background);
+  --cm-marker-color: var(--prism-marker-color);
+  --cm-marker-opacity: var(--prism-marker-opacity);
+  --cm-marker-font-size: var(--prism-marker-font-size);
+
+  /* Font */
+  --cm-font-size: var(--prism-font-size);
+  --cm-line-height: var(--prism-line-height);
+  --cm-font-family: var(--prism-font-family);
+  --cm-inline-font-size: var(--prism-inline-font-size);
+  --cm-block-font-size: var(--prism-block-font-size);
+  
+  /* Sizing */
+  --cm-tab-size: var(--prism-tab-size);
+  
+  --cm-block-padding-x: var(--prism-block-padding-x);
+  --cm-block-padding-y: var(--prism-block-padding-y);
+  --cm-block-margin-x: var(--prism-block-margin-x);
+  --cm-block-margin-y: var(--prism-block-margin-y);
+  --cm-block-radius: var(--prism-block-radius);
+  --cm-inline-padding-x: var(--prism-inline-padding-x);
+  --cm-inline-padding-y: var(--prism-inline-padding-y);
+  --cm-inline-radius: var(--prism-inline-radius);
+}

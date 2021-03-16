@@ -18,6 +18,7 @@
     "./": "./",
     "./themes/*": "./themes/*",
     "./base.css": "./base.css",
+    "./to-codemirror.css": "./to-codemirror.css",
     "./marker.css": "./marker.css"
   },
   "files": [
@@ -38,14 +39,14 @@
   "homepage": "https://github.com/antfu/prism-theme-vars#readme",
   "funding": "https://github.com/sponsors/antfu",
   "devDependencies": {
-    "@antfu/eslint-config": "^0.4.3",
-    "@types/node": "^14.14.27",
+    "@antfu/eslint-config": "^0.6.2",
+    "@types/node": "^14.14.35",
     "change-case": "^4.1.2",
     "cross-env": "^7.0.3",
-    "eslint": "^7.20.0",
-    "esno": "^0.4.3",
+    "eslint": "^7.22.0",
+    "esno": "^0.5.0",
     "fast-glob": "^3.2.5",
-    "typescript": "^4.1.5"
+    "typescript": "^4.2.3"
   },
   "eslintConfig": {
     "extends": "@antfu",
