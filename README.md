@@ -86,7 +86,7 @@ See all themes avaliable under [themes/*](./themes). Contributions are also grea
 Here is an example of Tailwind CSS favored dark mode support.
 
 ```css
-html:not(.dark) {
+body:not(.dark) {
   --prism-foreground: #393a34;
   --prism-background: #f8f8f8;
 
@@ -104,13 +104,12 @@ html:not(.dark) {
   --prism-regex: #ad502b;
 }
 
-html.dark {
+body.dark {
   --prism-foreground: #d4d4d4;
   --prism-background: #1e1e1e;
 
-  --prism-namespace: #aaaaaa;
   --prism-comment: #758575;
-  --prism-namespace: #444444;
+  --prism-namespace: #aaa;
   --prism-string: #ce9178;
   --prism-punctuation: #d4d4d4;
   --prism-literal: #36acaa;
@@ -121,6 +120,7 @@ html.dark {
   --prism-builtin: #d16969;
   --prism-property: #ce9178;
   --prism-regex: #ad502b;
+  --prism-background: var(--prism-foreground)
 }
 ```
 
