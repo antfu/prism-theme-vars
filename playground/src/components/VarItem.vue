@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
-import { computed, defineProps } from 'vue'
+import { computed } from 'vue'
 
 const props = defineProps<{ id: string; value: Ref<string> }>()
 
