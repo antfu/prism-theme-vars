@@ -1,9 +1,10 @@
-import { UserConfig } from 'vite'
+import type { UserConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Markdown from 'vite-plugin-md'
 import prism from 'markdown-it-prism'
-import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
-import ViteComponents from 'vite-plugin-components'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import Components from 'unplugin-vue-components/vite'
 import Windicss from 'vite-plugin-windicss'
 
 const config: UserConfig = {
@@ -18,19 +19,19 @@ const config: UserConfig = {
       ],
     }),
 
-    ViteComponents({
+    Components({
       extensions: ['vue', 'md'],
-      customLoaderMatcher: id => id.endsWith('.md'),
-      customComponentResolvers: [
-        ViteIconsResolver({
+      include: [/\.vue$/, /\.md$/],
+      resolvers: [
+        IconsResolver({
           componentPrefix: '',
         }),
       ],
     }),
 
-    ViteIcons(),
+    Icons(),
 
-    ...Windicss(),
+    Windicss(),
   ],
   optimizeDeps: {
     include: [

@@ -1,20 +1,22 @@
 ## TypeScript
 
 ```ts
+import fs = require('fs')
+
 class MyClass {
-  public static myValue: string;
+  public static myValue: string
   constructor(init: string) {
-    this.myValue = init;
+    this.myValue = init
   }
 }
-import fs = require("fs");
-module MyModule {
+namespace MyModule {
   export interface MyInterface extends Other {
-    myProperty: any;
+    myProperty: any
   }
 }
-declare magicNumber number;
-myArray.forEach(() => { }); // fat arrow syntax
+
+declare const magicNumber: number
+myArray.forEach(() => { }) // fat arrow syntax
 ```
 
 ## JSON
@@ -24,12 +26,12 @@ myArray.forEach(() => { }); // fat arrow syntax
   {
     "title": "apples",
     "count": [12000, 20000],
-    "description": {"text": "...", "sensitive": false}
+    "description": { "text": "...", "sensitive": false }
   },
   {
     "title": "oranges",
     "count": [17500, null],
-    "description": {"text": "...", "sensitive": false}
+    "description": { "text": "...", "sensitive": false }
   }
 ]
 ```

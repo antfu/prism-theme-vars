@@ -5,26 +5,26 @@
     "build": "cross-env NODE_ENV=production vite build"
   },
   "dependencies": {
-    "@vueuse/core": "^4.4.1",
+    "@vueuse/core": "^8.5.0",
     "file-saver": "^2.0.5",
-    "vue": "^3.0.7",
+    "vue": "^3.2.33",
     "vue-chemistry": "^0.2.2"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.317",
-    "@types/file-saver": "^2.0.1",
-    "@types/markdown-it": "^12.0.1",
-    "@vitejs/plugin-vue": "^1.1.5",
-    "@vue/compiler-sfc": "^3.0.7",
+    "@iconify/json": "^2.1.46",
+    "@types/file-saver": "^2.0.5",
+    "@types/markdown-it": "^12.2.3",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/compiler-sfc": "^3.2.33",
     "change-case": "^4.1.2",
-    "fast-glob": "^3.2.5",
-    "markdown-it": "^12.0.4",
-    "markdown-it-prism": "^2.1.6",
-    "typescript": "^4.2.3",
-    "vite": "^2.1.0",
-    "vite-plugin-components": "^0.8.3",
-    "vite-plugin-icons": "^0.3.2",
-    "vite-plugin-md": "^0.6.1",
-    "vite-plugin-windicss": "^0.8.3"
+    "fast-glob": "^3.2.11",
+    "markdown-it": "^13.0.1",
+    "markdown-it-prism": "^2.2.4",
+    "typescript": "^4.6.4",
+    "unplugin-icons": "^0.14.3",
+    "unplugin-vue-components": "^0.19.5",
+    "vite": "^2.9.9",
+    "vite-plugin-md": "^0.13.1",
+    "vite-plugin-windicss": "^1.8.4"
   }
 }

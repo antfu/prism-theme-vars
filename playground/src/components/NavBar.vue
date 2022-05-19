@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { downloadCSS, downloadJSON, Themes, theme } from '../store'
+import { Themes, downloadCSS, downloadJSON, theme } from '../store'
 </script>
 
 <template>
@@ -9,8 +9,8 @@ import { downloadCSS, downloadJSON, Themes, theme } from '../store'
     </div>
     <div class="flex-auto" />
     <select v-model="theme" class="font-mono mr-5 outline-none text-right">
-      <option v-for="theme in Object.keys(Themes)" :key="theme">
-        {{ theme }}
+      <option v-for="t in Object.keys(Themes)" :key="t">
+        {{ t }}
       </option>
     </select>
     <button title="Download JSON" class="p-2 icon-btn rounded inline-block opacity-75" @click="downloadJSON">

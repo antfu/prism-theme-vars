@@ -1,4 +1,5 @@
-import { reactive, ref, Ref, toRefs, watch } from 'vue'
+import type { Ref } from 'vue'
+import { reactive, ref, toRefs, watch } from 'vue'
 import { saveAs } from 'file-saver'
 import Themes from './themes.json'
 

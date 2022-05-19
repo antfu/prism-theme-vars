@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
-import { defineProps, computed } from 'vue'
+import { computed, defineProps } from 'vue'
 
-const props = defineProps<{id: string; value: Ref<string>}>()
+const props = defineProps<{ id: string; value: Ref<string> }>()
 
 const name = computed(() => props.id.replace('--prism-', ''))
 const value = props.value
