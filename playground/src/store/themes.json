@@ -32,7 +32,7 @@
     "--prism-line-number": "#a5a5a5",
     "--prism-line-number-gutter": "#333333",
     "--prism-line-highlight-background": "#eeeeee",
-    "--prism-selection-background": "#aaaaaa",
+    "--prism-selection-background": "#dddddd",
     "--prism-marker-color": "var(--prism-foreground)",
     "--prism-marker-opacity": "0.4",
     "--prism-marker-font-size": "0.8em",
