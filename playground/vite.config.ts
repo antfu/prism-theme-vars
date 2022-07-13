@@ -1,6 +1,6 @@
 import type { UserConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
-import Markdown from 'vite-plugin-md'
+import Markdown from 'vite-plugin-vue-markdown'
 import prism from 'markdown-it-prism'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'

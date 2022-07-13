@@ -5,26 +5,26 @@
     "build": "cross-env NODE_ENV=production vite build"
   },
   "dependencies": {
-    "@vueuse/core": "^8.5.0",
+    "@vueuse/core": "^8.9.2",
     "file-saver": "^2.0.5",
-    "vue": "^3.2.33",
+    "vue": "^3.2.37",
     "vue-chemistry": "^0.2.2"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.46",
+    "@iconify/json": "^2.1.77",
     "@types/file-saver": "^2.0.5",
     "@types/markdown-it": "^12.2.3",
     "@vitejs/plugin-vue": "^2.3.3",
-    "@vue/compiler-sfc": "^3.2.33",
+    "@vue/compiler-sfc": "^3.2.37",
     "change-case": "^4.1.2",
     "fast-glob": "^3.2.11",
     "markdown-it": "^13.0.1",
     "markdown-it-prism": "^2.2.4",
-    "typescript": "^4.6.4",
-    "unplugin-icons": "^0.14.3",
-    "unplugin-vue-components": "^0.19.5",
-    "vite": "^2.9.9",
-    "vite-plugin-md": "^0.13.1",
-    "vite-plugin-windicss": "^1.8.4"
+    "typescript": "^4.7.4",
+    "unplugin-icons": "^0.14.7",
+    "unplugin-vue-components": "^0.21.1",
+    "vite": "^2.9.14",
+    "vite-plugin-vue-markdown": "^0.20.1",
+    "vite-plugin-windicss": "^1.8.6"
   }
 }
