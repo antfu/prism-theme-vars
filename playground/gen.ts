@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { parse, resolve } from 'path'
-// eslint-disable-next-line import/named
+
 import { capitalCase } from 'change-case'
 import fg from 'fast-glob'
 

@@ -3,19 +3,21 @@
   "version": "0.2.4",
   "packageManager": "pnpm@7.1.1",
   "description": "A customizable Prism.js theme using CSS variables",
-  "license": "MIT",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/antfu",
+  "homepage": "https://github.com/antfu/prism-theme-vars#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/antfu/prism-theme-vars.git"
   },
-  "funding": "https://github.com/sponsors/antfu",
-  "main": "index.js",
-  "module": "index.mjs",
+  "bugs": {
+    "url": "https://github.com/antfu/prism-theme-vars/issues"
+  },
   "exports": {
     ".": {
-      "import": "./index.mjs",
-      "require": "./index.js"
+      "require": "./index.js",
+      "import": "./index.mjs"
     },
     "./*": "./*",
     "./themes/*": "./themes/*",
@@ -23,6 +25,8 @@
     "./to-codemirror.css": "./to-codemirror.css",
     "./marker.css": "./marker.css"
   },
+  "main": "index.js",
+  "module": "index.mjs",
   "files": [
     "base.css",
     "marker.css",
@@ -35,15 +39,13 @@
     "lint": "eslint .",
     "dev": "npm -C playground run dev",
     "build": "npm -C playground run build",
-    "release": "npx bumpp --commit --tag --push && npm publish"
+    "release": "bumpp && npm publish"
   },
-  "bugs": {
-    "url": "https://github.com/antfu/prism-theme-vars/issues"
-  },
-  "homepage": "https://github.com/antfu/prism-theme-vars#readme",
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
+    "@antfu/ni": "^0.16.3",
     "@types/node": "^18.0.3",
+    "bumpp": "^8.2.1",
     "change-case": "^4.1.2",
     "cross-env": "^7.0.3",
     "eslint": "^8.19.0",
