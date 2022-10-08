@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
 import { computed } from 'vue'
+import { colors } from '../store'
 
 const props = defineProps<{ id: string; value: Ref<string> }>()
 
@@ -21,6 +22,12 @@ const style = computed(() =>
         : { color: `var(${props.id})` },
   ),
 )
+
+const color = computed(() => {
+  const variableRe = /^var\((--prism-.+?)\)$/
+  const key = value.value.match(variableRe)?.[1]
+  return key ? colors[key] : value.value
+})
 
 const NonStyleAttrs = [
   'padding',
@@ -63,7 +70,7 @@ function onclick() {
     >
     <input
       v-if="type === 'color'"
-      v-model="value"
+      v-model="color"
       type="color"
       class="m-auto ml-4 bg-transparent w-8 h-9 border-none outline-none "
     >
