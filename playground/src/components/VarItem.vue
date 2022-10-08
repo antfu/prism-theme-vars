@@ -23,10 +23,15 @@ const style = computed(() =>
   ),
 )
 
-const color = computed(() => {
-  const variableRe = /^var\((--prism-.+?)\)$/
-  const key = value.value.match(variableRe)?.[1]
-  return key ? colors[key] : value.value
+const color = computed({
+  get() {
+    const variableRe = /^var\((--prism-.+?)\)$/
+    const key = value.value.match(variableRe)?.[1]
+    return key ? colors[key] : value.value
+  },
+  set(val: string) {
+    value.value = val
+  },
 })
 
 const NonStyleAttrs = [
