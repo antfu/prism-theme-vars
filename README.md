@@ -21,7 +21,10 @@ import 'prism-theme-vars/base.css'
 or
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-theme-vars/base.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/prism-theme-vars/base.css"
+/>
 ```
 
 ## Configuration
@@ -29,7 +32,7 @@ or
 Add CSS variables in your CSS, For example:
 
 ```css
-@import "prism-theme-vars/base.css";
+@import 'prism-theme-vars/base.css';
 
 :root {
   --prism-foreground: #393a34;
@@ -57,8 +60,8 @@ See [base.css](./base.css) for more options avaliable.
 We have a few themes variables built-in that you can directly use.
 
 ```css
-@import "prism-theme-vars/base.css";
-@import "prism-theme-vars/themes/vitesse-light.css";
+@import 'prism-theme-vars/base.css';
+@import 'prism-theme-vars/themes/vitesse-light.css';
 
 /* Overrides */
 :root {
@@ -66,13 +69,13 @@ We have a few themes variables built-in that you can directly use.
 }
 ```
 
-See all themes avaliable under [themes/*](./themes). Contributions are also greatly welcome! 
+See all themes avaliable under [themes/\*](./themes). Contributions are also greatly welcome!
 
 ### Work with `codemirror-theme-vars`
 
 ```css
-@import "prism-theme-vars/base.css";
-@import "prism-theme-vars/to-codemirror.css";
+@import 'prism-theme-vars/base.css';
+@import 'prism-theme-vars/to-codemirror.css';
 
 /* --prism prefix will alias to --cm automatically */
 :root {

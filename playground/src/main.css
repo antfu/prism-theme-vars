@@ -12,7 +12,8 @@ html.dark {
   color: #fff;
 }
 
-html, body {
+html,
+body {
   font-family: arial, helvetica;
 }
 
@@ -38,5 +39,5 @@ option {
 }
 
 .border-light {
-  border-color: rgba(125,125,125,0.1);
+  border-color: rgba(125, 125, 125, 0.1);
 }

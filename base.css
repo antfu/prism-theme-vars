@@ -50,10 +50,10 @@
   --prism-font-family: monospace;
   --prism-inline-font-size: var(--prism-font-size);
   --prism-block-font-size: var(--prism-font-size);
-  
+
   /* Sizing */
   --prism-tab-size: 2;
-  
+
   --prism-block-padding-x: 1em;
   --prism-block-padding-y: 1em;
   --prism-block-margin-x: 0;

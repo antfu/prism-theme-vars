@@ -2,7 +2,7 @@
 import type { Ref } from 'vue'
 import { computed } from 'vue'
 
-const props = defineProps<{ id: string; value: Ref<string> }>()
+const props = defineProps<{ id: string, value: Ref<string> }>()
 
 const name = computed(() => props.id.replace('--prism-', ''))
 const value = props.value
@@ -11,15 +11,13 @@ const style = computed(() =>
   Object.assign({
     color: 'var(--prism-foreground)',
     background: 'var(--prism-background)',
-  },
-  props.id.includes('background')
+  }, props.id.includes('background')
     ? { background: `var(${props.id})` }
     : props.id.includes('style')
       ? { 'font-style': `var(${props.id})` }
       : props.id.includes('decoration')
         ? { 'text-decoration': `var(${props.id})` }
-        : { color: `var(${props.id})` },
-  ),
+        : { color: `var(${props.id})` }),
 )
 
 const NonStyleAttrs = [

@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
     "target": "es2016",
-    "lib": ["ESNext", "DOM"],
-    "strict": true,
     "jsx": "preserve",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "noUnusedLocals": true
+    "skipLibCheck": true
   }
 }

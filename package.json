@@ -1,7 +1,7 @@
 {
   "name": "prism-theme-vars",
   "version": "0.2.4",
-  "packageManager": "pnpm@7.30.0",
+  "packageManager": "pnpm@9.0.4",
   "description": "A customizable Prism.js theme using CSS variables",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -16,8 +16,8 @@
   },
   "exports": {
     ".": {
-      "require": "./index.js",
-      "import": "./index.mjs"
+      "import": "./index.mjs",
+      "require": "./index.js"
     },
     "./*": "./*",
     "./themes/*": "./themes/*",
@@ -29,11 +29,11 @@
   "module": "index.mjs",
   "files": [
     "base.css",
-    "marker.css",
-    "to-codemirror.css",
     "index.js",
     "index.mjs",
-    "themes"
+    "marker.css",
+    "themes",
+    "to-codemirror.css"
   ],
   "scripts": {
     "lint": "eslint .",
@@ -42,18 +42,16 @@
     "release": "bumpp && npm publish"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.37.0",
-    "@antfu/ni": "^0.20.0",
-    "@types/node": "^18.15.3",
-    "bumpp": "^9.0.0",
-    "change-case": "^4.1.2",
+    "@antfu/eslint-config": "^2.15.0",
+    "@antfu/ni": "^0.21.12",
+    "@types/node": "^20.12.7",
+    "bumpp": "^9.4.0",
+    "change-case": "^5.4.4",
     "cross-env": "^7.0.3",
-    "eslint": "^8.36.0",
-    "esno": "^0.16.3",
-    "fast-glob": "^3.2.12",
-    "typescript": "^5.0.2"
-  },
-  "eslintConfig": {
-    "extends": "@antfu"
+    "eslint": "^9.0.0",
+    "eslint-plugin-format": "^0.1.1",
+    "esno": "^4.7.0",
+    "fast-glob": "^3.3.2",
+    "typescript": "^5.4.5"
   }
 }

@@ -50,10 +50,10 @@
   --cm-font-family: var(--prism-font-family);
   --cm-inline-font-size: var(--prism-inline-font-size);
   --cm-block-font-size: var(--prism-block-font-size);
-  
+
   /* Sizing */
   --cm-tab-size: var(--prism-tab-size);
-  
+
   --cm-block-padding-x: var(--prism-block-padding-x);
   --cm-block-padding-y: var(--prism-block-padding-y);
   --cm-block-margin-x: var(--prism-block-margin-x);

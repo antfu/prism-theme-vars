@@ -1,5 +1,5 @@
-import fs from 'fs'
-import { parse, resolve } from 'path'
+import fs from 'node:fs'
+import { parse, resolve } from 'node:path'
 
 import { capitalCase } from 'change-case'
 import fg from 'fast-glob'
