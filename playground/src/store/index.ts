@@ -41,7 +41,7 @@ export function downloadCSS() {
 }
 
 export function downloadJSON() {
-  saveAs(new Blob([getJSON()], { type: 'application/json' }), 'theme-vars.css')
+  saveAs(new Blob([getJSON()], { type: 'application/json' }), 'theme-vars.json')
 }
 
 watch(theme, applyTheme, { immediate: true })
